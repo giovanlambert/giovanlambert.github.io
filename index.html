@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giovanni Lambert</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">Giovanni Lambert</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-btn active" onclick="showSection('home', this)">Home</a></li>
+        <li><a href="#model" class="nav-btn" onclick="showSection('model', this)">Model</a></li>
+        <li><a href="#producer" class="nav-btn" onclick="showSection('producer', this)">Producer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME / ABOUT SECTION -->
+  <section id="home" class="section active">
+    <div class="about-container">
+      <h1>About Me</h1>
+      <p>
+        <!-- PASTE GIOVANNI'S BIO HERE -->
+        Hi, I'm Giovanni Lambert — a model and music producer based in [City]. 
+        I'm passionate about creative expression both in front of the camera and 
+        behind the boards. Welcome to my corner of the internet.
+      </p>
+      <div class="contact-links">
+        <a href="https://instagram.com/GIOVANNI_INSTAGRAM_HERE" target="_blank" class="contact-btn">
+          📸 Instagram
+        </a>
+        <a href="mailto:GIOVANNI_EMAIL_HERE@gmail.com" class="contact-btn">
+          ✉️ Email Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL SECTION -->
+  <section id="model" class="section">
+    <div class="content-container">
+      <h1>Modeling</h1>
+      <p>Coming soon — photos, campaigns, and editorial work.</p>
+      <!-- You can add <img> tags here later for portfolio shots -->
+    </div>
+  </section>
+
+  <!-- PRODUCER SECTION -->
+  <section id="producer" class="section">
+    <div class="content-container">
+      <h1>Producer</h1>
+      <p>Check out some of my latest production work below.</p>
+      <div class="video-grid">
+
+        <!-- VIDEO 1: Replace src with your YouTube embed URL -->
+        <!-- To get embed URL: on YouTube click Share > Embed > copy the src link -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="Track 1"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="Track 2"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_3"
+            title="Track 3"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showSection(id, el) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      // Show selected
+      document.getElementById(id).classList.add('active');
+      // Update nav highlight
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      el.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
