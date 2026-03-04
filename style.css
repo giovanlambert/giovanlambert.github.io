@@ -6,15 +6,15 @@
 }
 
 body {
-  background-color: #d9c4a0;   /* tan */
-  color: #5c3a1e;               /* brown */
+  background-color: #f0ede8;   /* ivory */
+  color: #4a4a4a;               /* neutral dark gray */
   font-family: 'Georgia', serif;
   min-height: 100vh;
 }
 
 /* ── NAV ── */
 header {
-  background-color: #c4a97d;
+  /* nav */ background-color: #dedad4;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -55,8 +55,8 @@ nav {
 
 .nav-btn:hover,
 .nav-btn.active {
-  background-color: #5c3a1e;
-  color: #f5ead8;
+  /* highlight */ background-color: #4a4a4a; 
+  color: #f9f7f4;
   border-color: #5c3a1e;
 }
 
@@ -109,15 +109,14 @@ p {
 .contact-btn {
   text-decoration: none;
   color: #f5ead8;
-  background-color: #7a4f2d;
-  padding: 0.6rem 1.4rem;
+/* button */ background-color: #888078;  padding: 0.6rem 1.4rem;
   border-radius: 25px;
   font-size: 1rem;
   transition: background 0.25s ease;
 }
 
 .contact-btn:hover {
-  background-color: #3d2208;
+  background-color:  color: #f9f7f4;
 }
 
 /* ── VIDEOS ── */
