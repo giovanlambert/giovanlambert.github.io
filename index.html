@@ -4,97 +4,158 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Giovan Lambert</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="images/star.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- ── NAVIGATION ── -->
   <header>
     <nav>
       <div class="logo">Giovan Lambert</div>
       <ul class="nav-links">
-        <li><a href="#home" class="nav-btn active" onclick="showSection('home', this)">Home</a></li>
-        <li><a href="#model" class="nav-btn" onclick="showSection('model', this)">Model</a></li>
-        <li><a href="#producer" class="nav-btn" onclick="showSection('producer', this)">Producer</a></li>
+        <li><a href="#home"     class="nav-btn active" onclick="showSection('home', this)">Home</a></li>
+        <li><a href="#model"    class="nav-btn"        onclick="showSection('model', this)">Model</a></li>
+        <li><a href="#producer" class="nav-btn"        onclick="showSection('producer', this)">Producer</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HOME / ABOUT SECTION -->
+  <!-- ══════════════════════════════
+       HOME / ABOUT
+  ══════════════════════════════ -->
   <section id="home" class="section active">
-    <div class="about-container">
-      <h1>About Me</h1>
-      <p>
-        <!-- PASTE GIOVAN'S BIO HERE -->
-        Hi, I'm Giovan Lambert. I'm a CBS News producer and freelance model based in New York City. 
-        I'm passionate about creative expression both in front of the camera and 
-        behind the boards. Storytelling is at the heart of all my work.
-        I am open for representation & freelance opportunities and am currently partnering with Google Photos along with other Clients. 
-        
-  <p>
-        In my free time I enjoy playing catan, rock-climging, and biking. Welcome to my corner of the internet, let's connect.
-      </p>
-      <div class="contact-links">
-        <a href="https://www.instagram.com/gio.lambert/" target="_blank" class="contact-btn">
-          Instagram
-        </a>
-        <a href="mailto:Gio.lambert18@gmail.com" class="contact-btn">
-          Email Me
-        </a>
-        <a href="https://www.linkedin.com/in/giovan-lambert-4b8337185/" class="contact-btn">
-          LinkedIn
-        </a>
-        <a href="https://www.youtube.com/@xxglamb/featured" class="contact-btn">
-          YouTube
-        </a>
+    <div class="hero">
+
+      <!--
+        HERO IMAGE
+        ──────────
+        1. Upload a photo to your repo (e.g. hero.jpg)
+        2. Delete the <div class="hero-placeholder"> block below
+        3. Uncomment the <img> line:
+
+        <img class="hero-img" src="hero.jpg" alt="Giovan Lambert" />
+      -->
+      <div class="hero-placeholder">
+        <span class="hero-placeholder-text">Upload hero.jpg to activate</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">CBS News Producer · Model · NYC</p>
+        <h1 class="hero-name">Giovan<br>Lambert</h1>
+        <p class="hero-bio">
+          Hi, I'm Giovan Lambert — a CBS News producer and freelance model based in New York City.
+          Storytelling is at the heart of all my work, both in front of the camera and behind the boards.
+          Open for representation &amp; freelance opportunities, and currently partnering with Google Photos.
+          In my free time I enjoy Catan, rock climbing, and biking. Let's connect.
+        </p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/gio.lambert/"                target="_blank" class="contact-btn">Instagram</a>
+          <a href="mailto:Gio.lambert18@gmail.com"                                        class="contact-btn">Email</a>
+          <a href="https://www.linkedin.com/in/giovan-lambert-4b8337185/" target="_blank" class="contact-btn">LinkedIn</a>
+          <a href="https://www.youtube.com/@xxglamb/featured"             target="_blank" class="contact-btn">YouTube</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- MODEL SECTION -->
+  <!-- ══════════════════════════════
+       MODEL
+  ══════════════════════════════ -->
   <section id="model" class="section">
-    <div class="content-container">
-      <h1>Modeling</h1>
-      <p>Coming soon — photos, campaigns, and editorial work.</p>
-      <!-- You can add <img> tags here later for portfolio shots -->
+
+    <div class="section-header">
+      <h2 class="section-title">Model</h2>
+      <span class="section-label">Portfolio</span>
+    </div>
+
+    <!--
+      ADDING PHOTOS
+      ─────────────
+      1. Upload images to your repo (name them photo1.jpg, photo2.jpg, etc.)
+      2. The FIRST image is featured (taller) — use his best shot there
+      3. Add or remove <img> + placeholder <div> pairs for 1–9 photos
+    -->
+    <div class="photo-grid">
+
+      <img src="photo1.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none; grid-row:span 2;">photo1.jpg</div>
+
+      <img src="photo2.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo2.jpg</div>
+
+      <img src="photo3.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo3.jpg</div>
+
+      <img src="photo4.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo4.jpg</div>
+
+      <img src="photo5.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo5.jpg</div>
+
+      <img src="photo6.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo6.jpg</div>
+
+      <img src="photo7.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo7.jpg</div>
+
+      <img src="photo8.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo8.jpg</div>
+
+      <img src="photo9.jpg" alt="Giovan Lambert"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="photo-placeholder" style="display:none;">photo9.jpg</div>
+
     </div>
   </section>
 
-  <!-- PRODUCER SECTION -->
+  <!-- ══════════════════════════════
+       PRODUCER
+  ══════════════════════════════ -->
   <section id="producer" class="section">
-    <div class="content-container">
-      <h1>Producer</h1>
-      <p>Check out some of my latest production work below.</p>
-      <div class="video-grid">
 
-        <!-- VIDEO 1: Replace src with your YouTube embed URL -->
-        <!-- To get embed URL: on YouTube click Share > Embed > copy the src link -->
-        <div class="video-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YMb0_Nd1E4c?si=JP9TaJ0sXUNeT5jW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <div class="section-header">
+      <h2 class="section-title">Producer</h2>
+      <span class="section-label">Work</span>
+    </div>
 
-        <!-- VIDEO 2 -->
-        <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/3uORALo_c1w?si=oZ1C_TkFZtsFQxIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <!-- VIDEO 3 -->
-        <div class="video-wrapper">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/WNqNb2htjSY?si=4Sqy5XA6GTAp9Qiu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
+    <div class="video-grid">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/YMb0_Nd1E4c?si=JP9TaJ0sXUNeT5jW"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/3uORALo_c1w?si=oZ1C_TkFZtsFQxIY"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/WNqNb2htjSY?si=4Sqy5XA6GTAp9Qiu"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
+
   </section>
 
+  <!-- ── JS ── -->
   <script>
     function showSection(id, el) {
-      // Hide all sections
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-      // Show selected
       document.getElementById(id).classList.add('active');
-      // Update nav highlight
       document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
       el.classList.add('active');
     }
