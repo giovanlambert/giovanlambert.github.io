@@ -354,3 +354,78 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── MOBILE FIX (paste at bottom of style.css) ── */
+@media (max-width: 768px) {
+
+  /* Nav wraps nicely */
+  nav {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .nav-btn {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  /* Hero text scales down */
+  .hero-name {
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+  }
+
+  .hero-content {
+    padding: 0 1.25rem 3rem;
+  }
+
+  .hero-bio {
+    font-size: 0.92rem;
+  }
+
+  /* Contact buttons stack */
+  .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  /* Photo grid goes 2 columns */
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .photo-grid img:first-child {
+    grid-row: span 1;
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Videos stack single column */
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section padding tightens */
+  #model, #producer {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 1rem; }
+  .photo-grid { grid-template-columns: 1fr 1fr; gap: 5px; }
+}
